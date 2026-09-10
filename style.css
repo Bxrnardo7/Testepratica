@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+header{
+    background-color: yellow;
+    display: flex;
+flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+
+
+}
+.bars{
+    width: 100px;
+    height: 100px;
+}
+bars:hover{
+    color: yellowgreen;
+}
+.lateral{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+   
+}
+.cards{
+  flex: 1;
+    display: flex;
+    flex-direction: row;
+   padding: 20px;
+   justify-content: space-around;   
+
+   border : 1px solid black;
+  
+}
+.cardballfut{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+}
+.cardballfutevolei{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+}
+.cardballvolei{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+}
+.cardballbasquete{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+    
+}
+.cardtext{
+   
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.imageballs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+}
