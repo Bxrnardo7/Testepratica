@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    min-height: 100vh;
+    background-color: rgb(127, 127, 195);
+}
+
+header {
+}
+
+.content {
+    flex: 1;
+    width: auto;
+    border: black 2px solid;
+}
+
+.apresentacao {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border: black 2px solid;
+    padding: 20px;
+}
+
+
+.bars {
+    width: 70px;
+    height: 70px;
+}
+
+.bars:hover {
+    background-color: rgb(51, 46, 56);
+    cursor: pointer;
+}
+
+.lateral {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(108, 108, 193);
+    justify-content: space-between;
+    border: black 2px solid;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+  
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cardball {
+    background-color: #FEFEFE;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.cardtext {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imageballs {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.li {
+    font-size: 40px;
+}
+
+.li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .lateral {
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .list {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 16px;
+        margin-top: 0;
+        padding: 16px;
+    }
+
+    .li,
+    .li a {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao {
+        font-size: 2.3rem;
+        min-height: 100px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 16px;
+    }
+
+    .cardball {
+        max-width: 230px;
+    }
+
+    .imageballs {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apresentacao {
+        font-size: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cardball {
+        max-width: 260px;
+    }
+}
